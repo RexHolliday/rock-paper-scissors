@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script> src="/home/pop_os/repos/rock-paper-scissors/script.js"</script>
-</head>
-<body>
-    
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <header><h1>Rock Paper Scissors best of 5</h1></header>
+
+      <div class ="scoreboard">
+          <div class="sign" id="player-label">player</div>
+          <div class="sign" id="computer-label">computer</div>
+          <span id="player-score">0</span>:<span id="computer-score">0</span>
+      </div>
+
+    <div class="result">
+        <p></p>
+        </div>
+
+        <div class="choices">
+            <div class="choice" id="rock">
+                <img src="/home/pop_os/repos/rock-paper-scissors/images/rock.png" width = 100px height = auto alt="rock">
+            </div>
+            <div class="choice" id="paper">
+                <img src="/home/pop_os/repos/rock-paper-scissors/images/paper.png" width = 100px height = auto alt="paper">
+            </div>
+            <div class="choice" id="scissors">
+                <img src="/home/pop_os/repos/rock-paper-scissors/images/scissors.png" width = 100px height = auto alt="scissors">
+            </div>
+        </div>
+
+        
+        <p id="endgame" hidden>Game Over</p>
+        <div class="play-again" hidden>
+            <button class="play-again">play again</button>
+        </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
 </html>
